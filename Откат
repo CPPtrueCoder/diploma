@@ -1,0 +1,105 @@
+
+
+function createMatrix(obj)
+{   
+Podpisi();
+var res = '';
+	size = document.getElementById('s1'),
+    N = size.value*1;
+	
+	size2 = document.getElementById('s2'),
+    X = size2.value*1;
+	Podpisi();
+    for (var i = 0; i < X; i++)
+     { for (var j = 0; j < N; j++)
+        { res += '<input style="width: 48px;" type="text" id="a'+(i+1)+(j+1)+'"/>'; }
+       res += '<br />';
+     }
+    document.getElementById(obj).innerHTML = res;
+}
+ 
+function Podpisi(){
+	size1 = document.getElementById('s1'),
+    N = size1.value*1;
+	red = "Введите данные" + "<br/>" + "&nbsp";
+	for (i=0;i<N-1;i++){
+	red += "X" + (i+1) + " &nbsp &nbsp &nbsp &nbsp";
+	}
+	red += "Y" 
+	document.getElementById('podpis').innerHTML= red;
+}
+
+function EnterMatrix()
+{
+    var A = [], size = document.getElementById('s1'),
+    N = size.value*1;
+	
+	size2 = document.getElementById('s2'),
+    X = size2.value*1;
+    for (var i = 0; i < X; i++)
+     { A[i] = [];
+       for (var j = 0; j < N; j++)
+        { A[i][j] = 1*document.getElementById('a'+(i+1)+(j+1)).value; }
+     }
+	 mx(A);
+      my(A);
+	 
+}
+
+function my(A){
+txt2 = "";
+	    //M(y)
+		var mw = 0;
+    for(var i=0;i<X;i++)
+    {
+        mw += A[i][N-1];
+    }
+    mw = mw/X;
+txt2 += "M(Y) = " + mw;
+document.getElementById('we').innerHTML= txt2 + "<br/>";
+}
+
+function mx(A,mq){
+var mq =[];
+var sums = A.reduce(function(r, e, i) {
+  e.forEach((a, j) => r[j] = (r[j] || 0) + a)
+  if (i == A.length - 1) r = r.map(el => el / A.length);
+  return r;
+}, [])
+var txt= "";
+for (var i=0;i<N-1;i++){
+ txt+= "M(X" + i + ") = " + sums[i] + "<br/>";
+
+}
+document.getElementById('sd').innerHTML= txt + "<br/>";
+dx(A,sums);
+}
+	
+	
+function dx(A,mq){
+var dispX=[]; var j=0; var txt1="<br/>";
+	  do 
+        {
+			dispX[j]=0;
+            for(let i=0;i<X;i++)
+            {
+                dispX[j] += Math.pow(A[i][j]-mq[j],2);
+            }
+            dispX[j] = dispX[j]/(X-1);
+			txt1 += "Disp (X" + j + ") = " + dispX[j] + "<br/>"
+		document.getElementById('qa').innerHTML= txt1; j++;
+         
+        }while (j<N-1); 
+		        }
+
+function cov(A){
+    for(int j=0;j<N-1;j++)
+        {
+            for(int i=0;i<X;i++)
+            {
+                temp += (matrix[i][j]-mx[j]) * (matrix[i][N-1]-mw);
+            }
+            cout << (temp) << "  ";
+            temp = 0;
+        }
+}
