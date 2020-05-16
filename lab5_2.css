@@ -21,7 +21,13 @@
 .inputfile + label * {
 	pointer-events: none;
 }
-
+img {
+	
+	margin-left:20%;
+	margin-right:20%;
+	line-height:0;
+	float:left;
+}
 #canvas1{
 	width: 600px;
 	height: 500px;
@@ -248,7 +254,7 @@ input{
 		height:900px; /* высота нашего блока */
 		width: 95%;
 		
-		padding-left: 25px;
+		padding:0%;
 		word-wrap: normal;
 background: #e4f9f6; /* цвет фона, белый */
 outline: 2px solid #000; /* Чёрная рамка */

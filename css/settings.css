@@ -1,0 +1,86 @@
+body{
+    background-image: url('../fon.jpg');
+    background-size: cover;
+}
+
+
+.theory{
+overflow: scroll;
+    height: 80vh;
+    margin-bottom: 10px;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    border: 2px solid #C1C1C1;
+    border-radius: 15px 15px 15px 15px;
+    z-index: -1;
+    background-color: red;
+    padding: 10px 25px 5px;
+}
+
+.inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+}
+.inputfile + label * {
+    pointer-events: none;
+}
+.inputfile + label {
+    margin: 0;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+
+    padding: 10px 25px 5px;
+    color: black;
+    background-color: rgb(0,255,255);
+    border: 2px solid #C1C1C1;
+    border-radius: 15px;
+    display: inline-block;
+    outline: none;
+
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: blue;
+}
+
+button {
+    color: black; /* цвет текста */
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    font-weight: bold;
+    padding: 10px 25px 5px;
+    border-radius: 15px 15px 15px 15px;
+    background: rgb(0,255,255); /* фон кнопки */
+    outline: none; /* убирать контур в Mozilla */
+}
+button:hover { background: rgb(0,255,255); } /* при наведении курсора мышки */
+button:active { background: rgb(0,0,255); } /* при нажатии */
+
+.button3{
+    color: black; /* цвет текста */
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    font-weight: bold;
+    margin-top:0.5%;
+    margin-bottom:0.5%;
+
+    border-radius: 15px 15px 15px 15px;
+    background: rgb(0,255,255); /* фон кнопки */
+    padding: 10px 25px 5px;
+    outline: none; /* убирать контур в Mozilla */
+}
+.full-test-theory{
+    width:90%
+}
+.or{
+    margin-right: 15px;
+}
+

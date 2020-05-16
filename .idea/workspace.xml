@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a217c86-8bba-4be1-a78c-8d97c1e55077" name="Default Changelist" comment="" />
+    <list default="true" id="5a217c86-8bba-4be1-a78c-8d97c1e55077" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/settings.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab5_2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mnozh.html" beforeDir="false" afterPath="$PROJECT_DIR$/mnozh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mnozh_parn_funcs.js" beforeDir="false" afterPath="$PROJECT_DIR$/mnozh_parn_funcs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parn.html" beforeDir="false" afterPath="$PROJECT_DIR$/parn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pfe.css" beforeDir="false" afterPath="$PROJECT_DIR$/pfe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pfe.html" beforeDir="false" afterPath="$PROJECT_DIR$/pfe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pfe.js" beforeDir="false" afterPath="$PROJECT_DIR$/pfe.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,11 +27,27 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PATH_TO_GIT" value="B:\Git\bin\git.exe" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\andie\Desktop\Здесь\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1b52X8aWpY550DvKYE7ESZdv8hV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +56,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="ServiceViewManager">
@@ -51,6 +83,10 @@
       <updated>1587907678082</updated>
       <workItem from="1587907697832" duration="3220000" />
       <workItem from="1587947050058" duration="5456000" />
+      <workItem from="1587952919516" duration="228000" />
+      <workItem from="1588793329569" duration="1210000" />
+      <workItem from="1589231703727" duration="3496000" />
+      <workItem from="1589607293780" duration="17992000" />
     </task>
     <servers />
   </component>
@@ -58,9 +94,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1075" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1587952919204">
+    <state x="1075" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1589609213685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1075" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587952919204" />
+    <state x="1075" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589609213685" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1589621984311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589621984311" />
   </component>
 </project>

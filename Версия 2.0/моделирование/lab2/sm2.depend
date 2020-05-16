@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1522795202 source:c:\users\ ирилл\desktop\3 курс\sm\sm2\sm2\main.cpp
+	<iostream>
+	<cmath>
+	<fstream>
+
+1522828847 source:c:\sm\sm2\sm2\main.cpp
+	<iostream>
+	<cmath>
+	<fstream>
+	<windows.h>
+
+1522825248 source:c:\users\Ёдик\desktop\sm2\main.cpp
+	<iostream>
+	<cmath>
+	<fstream>
+	<windows.h>
+
+1522825248 source:d:\”нивер\3курс\2сем\моделирование\lab2sh\main.cpp
+	<iostream>
+	<cmath>
+	<fstream>
+	<windows.h>
+
+1522825248 source:d:\”нивер\3курс\2сем\моделирование\lab2sh - копи€\main.cpp
+	<iostream>
+	<cmath>
+	<fstream>
+	<windows.h>
+
+1523822282 source:d:\”нивер\3курс\2сем\моделирование\lab2me\main.cpp
+	<iostream>
+	<cmath>
+	<fstream>
+	<windows.h>
+	<conio.h>
+

@@ -562,11 +562,11 @@ var N=Obj.N; var X= Obj.X; var txt123='';
 }, [])
 	
 	if (!document.getElementById('s1')){
-		var txt= "<center><b>Расчёт лабораторной работы по теме" + "<br/>Парная регрессия:" + "</b></center><br/><br/>";
-	Obj.txt+='Выполнение лабораторной работы №1\r\nПарная регрессия:\r\n';
+		var txt= "<center><b>Лабораторная работа по теме" + "<br/>Парная регрессия:" + "</b></center><br/><br/>";
+	Obj.txt+='Лабораторная работа №1\r\nПарная регрессия:\r\n';
 	}
 	else {
-	var txt= "<center><b>Расчёт лабораторной работы по теме" + "<br/>Множественная регресия:" + "</b></center><br/><br/>";	
+	var txt= "<center><b>Лабораторная работа по теме" + "<br/>Множественная регресия:" + "</b></center><br/><br/>";	
 	Obj.txt+='Выполнение лабораторной работы №1\r\nМножественная регрессия:\r\n';
 	}
 	for (var i=0;i<N-1;i++){
@@ -1605,8 +1605,10 @@ koeff[q]=(Math.abs(Obj.coeffs[0][(q+1)]))/Math.sqrt(Obj.dispX[q]/Obj.X);
 txt+= "<b>Значимость коэффициента Х"+ (q+1) + " &nbsp=&nbsp</b> " + "<b>|</b> " + Obj.coeffs[0][(q+1)] + ' <b>| /</b> ' + Fix(Math.sqrt(Obj.dispX[q]/Obj.X)) + ' &nbsp=&nbsp <b>' 
 + Fix(koeff[q]) +'</b>';
 if( Math.abs((Obj.coeffs[0][(q+1)]) / Math.sqrt(Obj.dispX[q]/Obj.X) < Obj.corrtable))
-{ txt+= " <b> < </b> "+ Obj.corrtable + ' <b>(Коэффициент незначимый)</b><br/>'; } 
-else { txt+= " <b> > </b> "+ Obj.corrtable + ' <b>(Коэффициент значимый)</b><br/>'; }
+{ txt+= " <b> < </b> "+ Obj.corrtable + ' <b>(Коэффициент значимый)</b><br/>'; } 
+else {  
+txt+= " <b> > </b> "+ Obj.corrtable + ' <b>(Коэффициент незначимый)</b><br/>';
+}
 
 q++;
 }while (q<(Obj.N-1))

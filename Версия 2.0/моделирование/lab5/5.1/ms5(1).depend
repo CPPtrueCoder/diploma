@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1526670627 source:d:\ughtu\3 КУРС\ii\model. syst\5\ms5(1)\main.cpp
+	<iostream>
+	<fstream>
+	<cmath>
+	<cstdlib>
+	<ctime>
+
+1526667027 source:c:\users\Эдик\desktop\ms5(1)\main.cpp
+	<iostream>
+	<fstream>
+	<cmath>
+	<cstdlib>
+	<ctime>
+
+1526921445 source:d:\Универ\3курс\2сем\моделирование\lab5\5.1\main.cpp
+	<iostream>
+	<fstream>
+	<cmath>
+	<cstdlib>
+	<ctime>
+

@@ -1,85 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
-	<meta charset="UTF-8">
-	<title>Диплом</title>
-	<link rel="stylesheet" href="main.cs">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Диплом</title>
 
 </head>
 <body>
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<a class="navbar-brand d-flex align-items-center" href="#"><img class="w-25" src="img/Linux.png" alt="logo">
-		<p>Диплом</p></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item">
-				<a class="nav-link active" href="parn.html">Парная регрессия <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="mnozh.html">Множественная регрессия</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="pfe.html">Полный факторный эксперимент</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="Lab5.html">Цепи Маркова</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="Lab5_2.html">Моделирование методом Монте-Карло</a>
-			</li>
-		</ul>
-	</div>
-</nav>
-<main class="container">
-	<div class="row mt-5">
-		<div id="theory" class="card col-lg-6 col-md-6 col-xs-12">
-			<h1 class="h1">Теория</h1>
-		</div>
-		<div id = "mmain" class="col-lg-6 col-md-6 col-xs-12" >
-		
-<b>Введите количество переменных X: </b>
-<select name="XX" id="s1">
-<option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value= "6">6</option>
-</select>
-
-<br/>
-<b>Введите число опытов: </b>   <input type="text" style="width: 38px;" name="number" id="s2" size="1"> <button class = 'button4' id = 'podskazka_button' onclick="podskazka_mnozh()">Как считать с файла</button> 
-<div id = 'legendary2'></div>  
-
-
-<button onclick="createMatrix('matrix1')">Создать матрицу</button> &nbsp;&nbsp; <b>ИЛИ</b>
-<input  type="file" multiple id="file" name="file" class= "inputfile" /> <label for="file">Считать с файла</label>  
-
-<!--<a href="javascript:void(0)" id="a"><button id='button13' onclick = "create()"> Скачать результат</button></a>-->
-
-<div id = "podpis"> </div>
-
-
-<table id="matrix1"></table> <div id = "button"></div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/settings.css">
+<header>
 
 
 
-</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand d-flex align-items-center" href="#"><img class="w-25" src="img/Linux.png" alt="logo">
+            <p>Диплом</p></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-	</div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="parn.html">Парная регрессия <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="mnozh.html">Множественная регрессия</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pfe.html">Полный факторный эксперимент</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Lab5.html">Цепи Маркова</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Lab5_2.html">Моделирование методом Монте-Карло</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container mt-5">
+        <div class="row">
+    <div id="theory" class="col-lg-6 col-md-7 col-xs-12 card theory mx-auto">
+        Прогноз осуществляется для оценки неизвестного параметра в будущем периоде времени или в
+            неисследованной части пространства. При прогнозировании используют два понятия:
+
+            <br/>1. <b>Предсказание</b> – суждение о будущем состоянии процесса (или состоянии процесса в
+            неисследованной части пространства), основанное на субъективных оценках качественных и количественных
+            факторов.
+
+            <br/>2. <b>Прогнозирование</b> – оценка параметра в будущем периоде или в неисследованной области
+            пространства на базе эвристических и математических методов. Эвристические методы базируются на
+            использовании трудно формализуемых или не формализуемых явлений или процессов.
+            <br/><b>Задачи регрессионного анализа:</b>
+
+            <br/><b>1.</b> Установление формы зависимости (линейная или нелинейная; положительная или отрицательная и т.
+            д.).
+
+            <br/><b>2.</b> Определение функции регрессии и установление влияния факторов на зависимую переменную. Важно
+            не только определить форму регрессии,
+
+            указать общую тенденцию изменения зависимой переменной, но и выяснить, каково было бы действие на зависимую
+            переменную главных факторов, если бы прочие не изменялись и если бы были исключены случайные элементы. Для
+            этого определяют функцию регрессии в виде математического уравнения то го или иного типа.
+
+            <br/><b>3.</b> Оценка неизвестных значений зависимой переменной, т. е. решение задач экстраполяции и
+            интерполяции. В ходе экстраполяции распространяются тенденции, установленные в прошлом, на будущий период.
+            Экстраполяция широко используется в прогнозировании. В ходе интерполяции определяют недостающие значения,
+            соответствующие моментам времени между известными моментами, т. е. определяют значения зависимой переменной
+            внутри интервала заданных значений факторов. <br/><b>Рассмотрим подробнее регрессию.</b>
+            <br/>
+        <img src="img/mnozh1.PNG">
+            <img src="img/mnozh2.PNG">
+        <img src="img/mnozh3.PNG">
+        <img src="img/mnozh4.PNG">
+
+        </div>
+
+    <div id="mmain" class="col-lg-6 col-md-5 col-xs-12 text-center">
+        <b>Лабораторная работа по теме: "Множественная регрессия"</b><br/>
+        <br/>
+        <b>Введите количество переменных X: </b>
+        <select name="XX" id="s1">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <br/>
+        <b>Введите число опытов: </b> <input type="text" style="width: 48px;" name="number" id="s2" size="1">
+        <button class='button4' id='podskazka_button' onclick="podskazka_mnozh()">Как считать с файла</button>
+        <div id='legendary2'></div>
+
+        <div class="col-lg-12 col-md-6 col-xs-8 mx-auto mt-2 ">
+        <button onclick="createMatrix('matrix1')">Создать матрицу</button> &nbsp;&nbsp; <b class="or">ИЛИ</b>
+        <input type="file" multiple id="file" name="file" class="inputfile"/> <label for="file">Считать с файла</label>
+
+        <!--<a href="javascript:void(0)" id="a"><button id='button13' onclick = "create()"> Скачать результат</button></a>-->
+
+            <div id="podpis"></div></div>
+
+
+        <table id="matrix1" class="mx-auto"></table>
+        <div id="button" class="mt-2"></div>
+
+
+    </div>
+        </div>
+        </div>
 </main>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="pfe.js"></script>
 <script src ="mnozh_checking.js"></script>
 <script src ="mnozh_parn_funcs.js"></script>
 <script src ="mnozh_main.js"></script>

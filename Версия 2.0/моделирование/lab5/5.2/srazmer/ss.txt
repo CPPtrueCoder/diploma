@@ -1,0 +1,30 @@
+#include <iostream>
+#include <fstream>
+ 
+int main()
+{
+    int n, m;
+    std::ifstream file("matrix.txt");
+    if (!file)
+    {
+        std::cout << "File couldn't be open.\n";
+        return -1;
+    }
+    file >> n;
+    file >> m;
+    int **matrix = new int*[n];
+    for (int i = 0; i < n; ++i)
+        matrix[i] = new int[m];
+    std::cout << "Matrix:\n";
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < m; ++j)
+        {
+            file >> matrix[i][j];
+            std::cout << matrix[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+    file.close();
+    return 0;
+}
