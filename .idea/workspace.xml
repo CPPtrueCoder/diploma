@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a217c86-8bba-4be1-a78c-8d97c1e55077" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/settings.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab5.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab5_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab5_2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mnozh.html" beforeDir="false" afterPath="$PROJECT_DIR$/mnozh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mnozh_parn_funcs.js" beforeDir="false" afterPath="$PROJECT_DIR$/mnozh_parn_funcs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parn.html" beforeDir="false" afterPath="$PROJECT_DIR$/parn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pfe.css" beforeDir="false" afterPath="$PROJECT_DIR$/pfe.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pfe.html" beforeDir="false" afterPath="$PROJECT_DIR$/pfe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pfe.js" beforeDir="false" afterPath="$PROJECT_DIR$/pfe.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +73,7 @@
       <workItem from="1587952919516" duration="228000" />
       <workItem from="1588793329569" duration="1210000" />
       <workItem from="1589231703727" duration="3496000" />
-      <workItem from="1589607293780" duration="17992000" />
+      <workItem from="1589607293780" duration="18864000" />
     </task>
     <servers />
   </component>
